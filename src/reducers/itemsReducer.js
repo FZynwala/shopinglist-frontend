@@ -1,4 +1,4 @@
-import { LOAD_ITEMS, POST_ITEM } from "../actions/type";
+import { LOAD_ITEMS, POST_ITEM, DELETE_ITEM } from "../actions/type";
 import _ from 'lodash';
 
 export default (state={}, action) => {
@@ -8,6 +8,8 @@ export default (state={}, action) => {
             return { ...state, ..._.mapKeys(action.payload, '_id') };
         case POST_ITEM:
             return { ...state, [action.payload._id]: action.payload };
+        case DELETE_ITEM:
+            return _.omit(state, action.payload);
         default:
             return state;
     };

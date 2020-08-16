@@ -1,4 +1,4 @@
-import { LOAD_ITEMS, SET_ADD_FLAG, CLEAR_ADD_FLAG, POST_ITEM } from './type';
+import { LOAD_ITEMS, SET_ADD_FLAG, CLEAR_ADD_FLAG, POST_ITEM, DELETE_ITEM } from './type';
 import items from '../apis/items';
 
 export const fetchItems = (userId) => async (dispatch) => {
@@ -17,6 +17,15 @@ export const postItem = (item) => async (dispatch) => {
     dispatch({
         type: POST_ITEM,
         payload: response.data
+    });
+};
+
+export const deleteItem = (itemId) => async (dispatch) => {
+    const response = await items.delete(`/items/${itemId}`);
+
+    dispatch({
+        type: DELETE_ITEM,
+        payload: itemId
     });
 };
 
