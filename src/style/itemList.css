@@ -10,10 +10,11 @@
 
 .list li {
     counter-increment: steps;
-    margin-top: 1rem;
+	margin-top: 1rem;
+	
 }
 
-.list li::before {
+/* .list li::before {
     content: counter(steps);
     margin-right: 0.5rem;
     background: #ff6f00;
@@ -24,7 +25,7 @@
     display: inline-grid;
     place-items: center;
     line-height: 1.4em;
-}
+} */
 
 .add-button {
     position: fixed;
@@ -62,6 +63,12 @@
 	background-color: #1a705d;
 	transition: 220ms all ease-in-out;
 }
+
+
+.button-delete {
+	
+	
+} 
 
 .form__group {
 	position: relative;

@@ -1,4 +1,4 @@
-import { LOAD_ITEMS, POST_ITEM, DELETE_ITEM } from "../actions/type";
+import { LOAD_ITEMS, POST_ITEM, DELETE_ITEM, EDIT_TASK } from "../actions/type";
 import _ from 'lodash';
 
 export default (state={}, action) => {
@@ -10,6 +10,8 @@ export default (state={}, action) => {
             return { ...state, [action.payload._id]: action.payload };
         case DELETE_ITEM:
             return _.omit(state, action.payload);
+        case EDIT_TASK:
+            return { ...state, [action.payload._id]: action.payload };
         default:
             return state;
     };

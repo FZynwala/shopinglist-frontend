@@ -4,13 +4,15 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { Field, reduxForm } from 'redux-form';
 import { setAddFlag, clearAddFlag, postItem } from '../actions/index';
+import Item from './Item';
 
 class ItemsList extends React.Component {
-    renderItems() {
+    renderItems = () => {
         if(this.props.items) {
             return this.props.items.map( item => {
+                let color = item.isDone ? 'done' : '';
                 return (
-                    <li>{item.content}</li>
+                    <Item className={`${color}`} item={item} />
                 );
             });
         }

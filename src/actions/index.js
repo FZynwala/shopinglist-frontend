@@ -1,4 +1,4 @@
-import { LOAD_ITEMS, SET_ADD_FLAG, CLEAR_ADD_FLAG, POST_ITEM, DELETE_ITEM } from './type';
+import { LOAD_ITEMS, SET_ADD_FLAG, CLEAR_ADD_FLAG, POST_ITEM, DELETE_ITEM, EDIT_TASK } from './type';
 import items from '../apis/items';
 
 export const fetchItems = (userId) => async (dispatch) => {
@@ -32,6 +32,13 @@ export const deleteItem = (itemId) => async (dispatch) => {
 export const setAddFlag = () => {
     return {
         type: SET_ADD_FLAG
+    };
+};
+
+export const editItem = (item) => {
+    return {
+        type: EDIT_TASK,
+        payload: item
     };
 };
 

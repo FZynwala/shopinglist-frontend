@@ -1,9 +1,9 @@
 li {
     counter-increment: steps;
     margin-top: 1rem;
-}
+} 
 
-li::before {
+.item::before {
     content: counter(steps);
     margin-right: 0.5rem;
     background: #ff6f00;
@@ -14,4 +14,16 @@ li::before {
     display: inline-grid;
     place-items: center;
     line-height: 1.4em;
+}
+
+.done::before {
+    background: #218c74;
+}
+
+.done {
+    text-decoration: line-through;
+}
+
+.pending::before {
+    background: #ff6f00;
 }
