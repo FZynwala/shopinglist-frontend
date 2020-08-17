@@ -35,11 +35,13 @@ export const setAddFlag = () => {
     };
 };
 
-export const editItem = (item) => {
-    return {
+export const editItem = (item) => async (dispatch) => {
+    const response = await items.put(`items/${item._id}`, item);
+
+    dispatch({
         type: EDIT_TASK,
         payload: item
-    };
+    });
 };
 
 export const clearAddFlag = () => {
