@@ -5,7 +5,7 @@
     counter-reset: steps;
     font-family: 'Baloo Tamma 2', cursive;
     font-weight: 500;
-    font-size: 1.2rem;
+	font-size: 1.2rem;
 }
 
 .list li {
@@ -13,19 +13,6 @@
 	margin-top: 1rem;
 	
 }
-
-/* .list li::before {
-    content: counter(steps);
-    margin-right: 0.5rem;
-    background: #ff6f00;
-    color: white;
-    width: 1.2em;
-    height: 1.2em;
-    border-radius: 50%;
-    display: inline-grid;
-    place-items: center;
-    line-height: 1.4em;
-} */
 
 .add-button {
     position: fixed;
@@ -63,12 +50,6 @@
 	background-color: #1a705d;
 	transition: 220ms all ease-in-out;
 }
-
-
-.button-delete {
-	
-	
-} 
 
 .form__group {
 	position: relative;

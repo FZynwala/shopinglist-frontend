@@ -27,3 +27,8 @@ li {
 .pending::before {
     background: #ff6f00;
 }
+
+.button-delete {
+	float: right;
+	
+} 

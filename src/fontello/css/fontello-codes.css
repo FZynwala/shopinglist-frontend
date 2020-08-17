@@ -2,3 +2,5 @@
 .icon-basket-alt:before { content: '\e800'; } /* '' */
 .icon-plus-circle:before { content: '\e801'; } /* '' */
 .icon-plus:before { content: '\e802'; } /* '' */
+.icon-cancel-circled:before { content: '\e803'; } /* '' */
+.icon-cancel-circled-outline:before { content: '\e804'; } /* '' */

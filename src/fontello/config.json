@@ -23,6 +23,18 @@
       "css": "plus",
       "code": 59394,
       "src": "iconic"
+    },
+    {
+      "uid": "3327862df439988139b61814143b7a42",
+      "css": "cancel-circled",
+      "code": 59395,
+      "src": "typicons"
+    },
+    {
+      "uid": "517522647a556192fbc78aa391b7b0c2",
+      "css": "cancel-circled-outline",
+      "code": 59396,
+      "src": "typicons"
     }
   ]
 }
