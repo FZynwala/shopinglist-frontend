@@ -12,7 +12,7 @@ class ItemsList extends React.Component {
             return this.props.items.map( item => {
                 let color = item.isDone ? 'done' : '';
                 return (
-                    <Item className={`${color}`} item={item} />
+                    <Item item={item} />
                 );
             });
         }
