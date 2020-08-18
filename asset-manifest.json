@@ -1,23 +1,23 @@
 {
   "files": {
     "main.css": "/shopinglist-frontend/static/css/main.73c0d935.chunk.css",
-    "main.js": "/shopinglist-frontend/static/js/main.98f134ee.chunk.js",
-    "main.js.map": "/shopinglist-frontend/static/js/main.98f134ee.chunk.js.map",
+    "main.js": "/shopinglist-frontend/static/js/main.f1bcdb30.chunk.js",
+    "main.js.map": "/shopinglist-frontend/static/js/main.f1bcdb30.chunk.js.map",
     "runtime-main.js": "/shopinglist-frontend/static/js/runtime-main.43e35650.js",
     "runtime-main.js.map": "/shopinglist-frontend/static/js/runtime-main.43e35650.js.map",
-    "static/js/2.6769737a.chunk.js": "/shopinglist-frontend/static/js/2.6769737a.chunk.js",
-    "static/js/2.6769737a.chunk.js.map": "/shopinglist-frontend/static/js/2.6769737a.chunk.js.map",
+    "static/js/2.bde7b942.chunk.js": "/shopinglist-frontend/static/js/2.bde7b942.chunk.js",
+    "static/js/2.bde7b942.chunk.js.map": "/shopinglist-frontend/static/js/2.bde7b942.chunk.js.map",
     "index.html": "/shopinglist-frontend/index.html",
-    "precache-manifest.b9cd3eb54408ea53ba56d65b386c9a05.js": "/shopinglist-frontend/precache-manifest.b9cd3eb54408ea53ba56d65b386c9a05.js",
+    "precache-manifest.4474d571275021fd5594489d951b6e4b.js": "/shopinglist-frontend/precache-manifest.4474d571275021fd5594489d951b6e4b.js",
     "service-worker.js": "/shopinglist-frontend/service-worker.js",
     "static/css/main.73c0d935.chunk.css.map": "/shopinglist-frontend/static/css/main.73c0d935.chunk.css.map",
-    "static/js/2.6769737a.chunk.js.LICENSE.txt": "/shopinglist-frontend/static/js/2.6769737a.chunk.js.LICENSE.txt",
+    "static/js/2.bde7b942.chunk.js.LICENSE.txt": "/shopinglist-frontend/static/js/2.bde7b942.chunk.js.LICENSE.txt",
     "static/media/fontello.css": "/shopinglist-frontend/static/media/fontello.e509f8d3.ttf"
   },
   "entrypoints": [
     "static/js/runtime-main.43e35650.js",
-    "static/js/2.6769737a.chunk.js",
+    "static/js/2.bde7b942.chunk.js",
     "static/css/main.73c0d935.chunk.css",
-    "static/js/main.98f134ee.chunk.js"
+    "static/js/main.f1bcdb30.chunk.js"
   ]
 }
