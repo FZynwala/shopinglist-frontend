@@ -1,5 +1,5 @@
 import React from 'react';
-import { Router, Route } from 'react-router-dom';
+import { HashRouter, Route } from 'react-router-dom';
 import { connect } from 'react-redux';
 import history from '../history';
 import ItemsList from './ItemsList';
@@ -16,11 +16,11 @@ class App extends React.Component {
         return (
             <div>
                 <Header />
-                <Router history={history}>
+                <HashRouter>
                     <div>
                         <Route path="/" exact component={ItemsList} />
                     </div>
-                </Router>
+                </HashRouter>
             </div>
         );
     };
