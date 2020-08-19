@@ -44,7 +44,7 @@ class ItemsList extends React.Component {
             return (
                 <form onSubmit={this.props.handleSubmit(this.onSubmit)}>
                     <Field name='name1' component={this.renderInput} />
-                    <button className="button-submit">Dodaj</button>
+                    <div className="button-container"><button className="button-submit">Dodaj</button></div>
                 </form>
             );
         };
