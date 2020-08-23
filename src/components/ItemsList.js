@@ -10,7 +10,6 @@ class ItemsList extends React.Component {
     renderItems = () => {
         if(this.props.items) {
             return this.props.items.map( item => {
-                let color = item.isDone ? 'done' : '';
                 return (
                     <Item item={item} />
                 );
@@ -42,10 +41,12 @@ class ItemsList extends React.Component {
     renderForm = () => {
         if(this.props.flagAdd.flagAdd) {
             return (
-                <form onSubmit={this.props.handleSubmit(this.onSubmit)}>
-                    <Field name='name1' component={this.renderInput} />
-                    <div className="button-container"><button className="button-submit">Dodaj</button></div>
-                </form>
+                <div className="form-background">
+                    <form className="form__group" onSubmit={this.props.handleSubmit(this.onSubmit)}>
+                        <Field name='name1' component={this.renderInput} />
+                        <div className="button-container"><button className="button-submit">Dodaj</button></div>
+                    </form>
+                </div>
             );
         };
 
@@ -67,7 +68,7 @@ class ItemsList extends React.Component {
                     {this.renderItems()}
                     {this.renderForm()}
                 </ol>
-                <div>
+                <div className={this.props.flagAdd.flagAdd ? 'invisible' : ''}>
                     <div onClick={this.onClickAddButton}>
                         <i className="icon-plus-circle add-button" />
                     </div>

@@ -6,6 +6,8 @@ import ItemsList from './ItemsList';
 import { fetchItems } from '../actions';
 import Header from './Header';
 import "../fontello/css/fontello.css";
+import RegisterPage from './RegisterPage';
+import LoginPage from './LoginPage';
 
 class App extends React.Component {
     componentDidMount() {
@@ -19,6 +21,8 @@ class App extends React.Component {
                 <HashRouter>
                     <div>
                         <Route path="/" exact component={ItemsList} />
+                        <Route path="/register" exact component={RegisterPage} />
+                        <Route path="/login" exact component={LoginPage} />
                     </div>
                 </HashRouter>
             </div>
