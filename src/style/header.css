@@ -6,3 +6,16 @@
     font-weight: 700;
     font-size: 1.5rem;
 }
+
+.logout-button {
+    position: fixed;
+    top: 13px;
+    right: 15px;
+    margin-left: 0px;
+    line-height: 1.5;
+    font-size: 22px;
+}
+
+.invisible {
+	display: none;
+}

@@ -35,6 +35,12 @@
       "css": "cancel-circled-outline",
       "code": 59396,
       "src": "typicons"
+    },
+    {
+      "uid": "2d76f2c8d13be40694ecadfea7fb83c3",
+      "css": "logout-1",
+      "code": 59398,
+      "src": "entypo"
     }
   ]
 }

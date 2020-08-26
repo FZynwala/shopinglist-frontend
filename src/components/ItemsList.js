@@ -3,10 +3,14 @@ import '../fontello/css/fontello.css';
 import React from 'react';
 import { connect } from 'react-redux';
 import { Field, reduxForm } from 'redux-form';
-import { setAddFlag, clearAddFlag, postItem } from '../actions/index';
+import { setAddFlag, clearAddFlag, postItem, fetchItems, logOutUser } from '../actions/index';
 import Item from './Item';
 
 class ItemsList extends React.Component {
+    componentDidMount() {
+        this.props.fetchItems();
+    };
+
     renderItems = () => {
         if(this.props.items) {
             return this.props.items.map( item => {
@@ -62,6 +66,10 @@ class ItemsList extends React.Component {
     };
 
     render() {
+        if(!localStorage.getItem("token")) {
+            this.props.history.push('/login');
+            return <div></div>;
+        }
         return (
             <div>
                 <ol className='list'>
@@ -79,13 +87,13 @@ class ItemsList extends React.Component {
 };
 
 const mapStateToProps = (state) => {
-    console.log(state)
     return {
         items: Object.values(state.items),
-        flagAdd: state.flagAdd
+        flagAdd: state.flagAdd,
+        isSignedIn: state.auth.isSignedIn
     };
 };
 
 export default reduxForm({
     form: 'newItems'
-})(connect(mapStateToProps, { setAddFlag, clearAddFlag, postItem })(ItemsList));
+})(connect(mapStateToProps, { setAddFlag, clearAddFlag, postItem, fetchItems, logOutUser })(ItemsList));

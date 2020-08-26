@@ -2,10 +2,11 @@ import { combineReducers } from 'redux';
 import { reducer as formReducer } from 'redux-form';
 import itemsReducer from './itemsReducer';
 import flagreducer from './flagreducer';
+import authReducer from './authReducer';
 import { POST_ITEM } from '../actions/type';
 
 export default combineReducers({
-    auth: {},
+    auth: authReducer,
     items: itemsReducer,
     flagAdd: flagreducer,
     form: formReducer.plugin({

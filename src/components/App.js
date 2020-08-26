@@ -3,15 +3,19 @@ import { HashRouter, Route } from 'react-router-dom';
 import { connect } from 'react-redux';
 import history from '../history';
 import ItemsList from './ItemsList';
-import { fetchItems } from '../actions';
+import { fetchItems, setSignInFlag, setSignOutFlag } from '../actions';
 import Header from './Header';
 import "../fontello/css/fontello.css";
 import RegisterPage from './RegisterPage';
 import LoginPage from './LoginPage';
 
 class App extends React.Component {
-    componentDidMount() {
-        this.props.fetchItems(1);
+    componentDidMount = () => {
+        if(localStorage.getItem("token")) {
+            this.props.setSignInFlag();
+        } else {
+            this.props.setSignOutFlag();
+        };
     };
 
     render() {
@@ -30,4 +34,4 @@ class App extends React.Component {
     };
 }
 
-export default connect(null, { fetchItems })(App);
+export default connect(null, { fetchItems, setSignInFlag, setSignOutFlag })(App);

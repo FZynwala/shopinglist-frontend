@@ -4,3 +4,5 @@ export const CLEAR_ADD_FLAG = 'CLEAR_ADD_FLAG';
 export const POST_ITEM = 'POST_ITEM';
 export const DELETE_ITEM = 'DELETE_ITEM';
 export const EDIT_TASK = 'EDIT_TASK';
+export const SIGN_IN = 'SIGN_IN';
+export const SIGN_OUT = 'SIGN_OUT';
