@@ -20,7 +20,7 @@
     right: 15px;
     bottom: 20px;
     color: #218c74;
-    font-size: 60px;
+	font-size: 60px;
 }
 
 .button-container {
@@ -58,6 +58,15 @@
 
 .form-background {
 	background-color: #fff;
+	width: 100vw;
+	height: 135px;
+	z-index: 201;
+	position: fixed;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	display: flex;
+	justify-content: center;
 }
 
 .form__group {
@@ -79,12 +88,13 @@
 	font-size: 1.3rem;
 	color: black;
 	padding: 7px 0;
-	background: transparent;
+	background: #fff;
 	transition: border-color 0.2s;
 }
 
 .form__field::placeholder {
-	color: transparent;
+	color: #fff;
+	z-index: 200;
 }
 
 .form__field:placeholder-shown ~ .form__label {
@@ -108,6 +118,7 @@
 	border-width: 3px;
 	border-image: linear-gradient(to right, #218c74, #38ef7d);
 	border-image-slice: 1;
+	z-index: 2000;
 }
 
 .form__field:focus ~ .form__label {
@@ -127,4 +138,16 @@
 
 .invisible {
 	display: none;
+}
+
+.background-modal {
+	width: 100vw;
+	height: 80vh;
+	background-color: black;
+	z-index: 100;
+	margin: 0px;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	opacity: 0.01;
 }

@@ -65,6 +65,10 @@ class ItemsList extends React.Component {
         this.props.clearAddFlag();
     };
 
+    onClickBackground = () => {
+        this.props.clearAddFlag();
+    }
+
     render() {
         if(!localStorage.getItem("token")) {
             this.props.history.push('/login');
@@ -81,6 +85,7 @@ class ItemsList extends React.Component {
                         <i className="icon-plus-circle add-button" />
                     </div>
                 </div>
+                <div onClick={this.onClickBackground} className={this.props.flagAdd.flagAdd ? 'background-modal' : 'invisible'}></div>
             </div>
         );
     };
