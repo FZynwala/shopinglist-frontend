@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/shopinglist-frontend/static/css/main.d0a53500.chunk.css",
-    "main.js": "/shopinglist-frontend/static/js/main.4932c8d3.chunk.js",
-    "main.js.map": "/shopinglist-frontend/static/js/main.4932c8d3.chunk.js.map",
+    "main.css": "/shopinglist-frontend/static/css/main.195a2c97.chunk.css",
+    "main.js": "/shopinglist-frontend/static/js/main.b2589a86.chunk.js",
+    "main.js.map": "/shopinglist-frontend/static/js/main.b2589a86.chunk.js.map",
     "runtime-main.js": "/shopinglist-frontend/static/js/runtime-main.43e35650.js",
     "runtime-main.js.map": "/shopinglist-frontend/static/js/runtime-main.43e35650.js.map",
     "static/js/2.3ef55dd1.chunk.js": "/shopinglist-frontend/static/js/2.3ef55dd1.chunk.js",
     "static/js/2.3ef55dd1.chunk.js.map": "/shopinglist-frontend/static/js/2.3ef55dd1.chunk.js.map",
     "index.html": "/shopinglist-frontend/index.html",
-    "precache-manifest.ebfacec8b156ba790cd7a69666d3c6d0.js": "/shopinglist-frontend/precache-manifest.ebfacec8b156ba790cd7a69666d3c6d0.js",
+    "precache-manifest.a20f6ee1dc6102c1a5fc96abfd20540b.js": "/shopinglist-frontend/precache-manifest.a20f6ee1dc6102c1a5fc96abfd20540b.js",
     "service-worker.js": "/shopinglist-frontend/service-worker.js",
-    "static/css/main.d0a53500.chunk.css.map": "/shopinglist-frontend/static/css/main.d0a53500.chunk.css.map",
+    "static/css/main.195a2c97.chunk.css.map": "/shopinglist-frontend/static/css/main.195a2c97.chunk.css.map",
     "static/js/2.3ef55dd1.chunk.js.LICENSE.txt": "/shopinglist-frontend/static/js/2.3ef55dd1.chunk.js.LICENSE.txt",
     "static/media/fontello.css": "/shopinglist-frontend/static/media/fontello.dfdd9978.ttf"
   },
   "entrypoints": [
     "static/js/runtime-main.43e35650.js",
     "static/js/2.3ef55dd1.chunk.js",
-    "static/css/main.d0a53500.chunk.css",
-    "static/js/main.4932c8d3.chunk.js"
+    "static/css/main.195a2c97.chunk.css",
+    "static/js/main.b2589a86.chunk.js"
   ]
 }
