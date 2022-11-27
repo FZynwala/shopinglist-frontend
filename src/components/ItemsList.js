@@ -1,22 +1,20 @@
-import '../style/itemList.css';
-import '../fontello/css/fontello.css';
 import React from 'react';
 import { connect } from 'react-redux';
 import { Field, reduxForm } from 'redux-form';
-import { setAddFlag, clearAddFlag, postItem, fetchItems, logOutUser } from '../actions/index';
+import { clearAddFlag, fetchItems, logOutUser, postItem, setAddFlag } from '../actions/index';
+import '../fontello/css/fontello.css';
+import '../style/itemList.css';
 import Item from './Item';
 
 class ItemsList extends React.Component {
     componentDidMount() {
         this.props.fetchItems();
-    };
+    }
 
     renderItems = () => {
-        if(this.props.items) {
-            return this.props.items.map( item => {
-                return (
-                    <Item item={item} />
-                );
+        if (this.props.items) {
+            return this.props.items.map((item) => {
+                return <Item item={item} />;
             });
         }
     };
@@ -27,7 +25,6 @@ class ItemsList extends React.Component {
         const body = {
             content: formValues.name1,
             isDone: false,
-            userId: 1
         };
 
         await this.props.postItem(body);
@@ -40,21 +37,21 @@ class ItemsList extends React.Component {
                 <input className="form__field" {...input} />
             </div>
         );
-    };
+    }
 
     renderForm = () => {
-        if(this.props.flagAdd.flagAdd) {
+        if (this.props.flagAdd.flagAdd) {
             return (
                 <div className="form-background">
                     <form className="form__group" onSubmit={this.props.handleSubmit(this.onSubmit)}>
-                        <Field name='name1' component={this.renderInput} />
-                        <div className="button-container"><button className="button-submit">Dodaj</button></div>
+                        <Field name="name1" component={this.renderInput} />
+                        <div className="button-container">
+                            <button className="button-submit">Dodaj</button>
+                        </div>
                     </form>
                 </div>
             );
-        };
-
-
+        }
     };
 
     onClickAddButton = () => {
@@ -67,16 +64,16 @@ class ItemsList extends React.Component {
 
     onClickBackground = () => {
         this.props.clearAddFlag();
-    }
+    };
 
     render() {
-        if(!localStorage.getItem("token")) {
+        if (!localStorage.getItem('token')) {
             this.props.history.push('/login');
             return <div></div>;
         }
         return (
             <div>
-                <ol className='list'>
+                <ol className="list">
                     {this.renderItems()}
                     {this.renderForm()}
                 </ol>
@@ -85,20 +82,23 @@ class ItemsList extends React.Component {
                         <i className="icon-plus-circle add-button" />
                     </div>
                 </div>
-                <div onClick={this.onClickBackground} className={this.props.flagAdd.flagAdd ? 'background-modal' : 'invisible'}></div>
+                <div
+                    onClick={this.onClickBackground}
+                    className={this.props.flagAdd.flagAdd ? 'background-modal' : 'invisible'}
+                ></div>
             </div>
         );
-    };
-};
+    }
+}
 
 const mapStateToProps = (state) => {
     return {
         items: Object.values(state.items),
         flagAdd: state.flagAdd,
-        isSignedIn: state.auth.isSignedIn
+        isSignedIn: state.auth.isSignedIn,
     };
 };
 
 export default reduxForm({
-    form: 'newItems'
+    form: 'newItems',
 })(connect(mapStateToProps, { setAddFlag, clearAddFlag, postItem, fetchItems, logOutUser })(ItemsList));
