@@ -1,23 +1,24 @@
 {
   "files": {
-    "main.css": "/shopinglist-frontend/static/css/main.0b8d0de3.chunk.css",
-    "main.js": "/shopinglist-frontend/static/js/main.4932c8d3.chunk.js",
-    "main.js.map": "/shopinglist-frontend/static/js/main.4932c8d3.chunk.js.map",
-    "runtime-main.js": "/shopinglist-frontend/static/js/runtime-main.43e35650.js",
-    "runtime-main.js.map": "/shopinglist-frontend/static/js/runtime-main.43e35650.js.map",
-    "static/js/2.3ef55dd1.chunk.js": "/shopinglist-frontend/static/js/2.3ef55dd1.chunk.js",
-    "static/js/2.3ef55dd1.chunk.js.map": "/shopinglist-frontend/static/js/2.3ef55dd1.chunk.js.map",
+    "main.css": "/shopinglist-frontend/static/css/main.a82c94c3.chunk.css",
+    "main.js": "/shopinglist-frontend/static/js/main.8a60a8ea.chunk.js",
+    "main.js.map": "/shopinglist-frontend/static/js/main.8a60a8ea.chunk.js.map",
+    "runtime-main.js": "/shopinglist-frontend/static/js/runtime-main.77003779.js",
+    "runtime-main.js.map": "/shopinglist-frontend/static/js/runtime-main.77003779.js.map",
+    "static/js/2.e54aca96.chunk.js": "/shopinglist-frontend/static/js/2.e54aca96.chunk.js",
+    "static/js/2.e54aca96.chunk.js.map": "/shopinglist-frontend/static/js/2.e54aca96.chunk.js.map",
     "index.html": "/shopinglist-frontend/index.html",
-    "precache-manifest.9d223f208f463ab29cb4d222f5eee9fd.js": "/shopinglist-frontend/precache-manifest.9d223f208f463ab29cb4d222f5eee9fd.js",
+    "precache-manifest.1c2c717e8eaf916319ec2bfed557d8f5.js": "/shopinglist-frontend/precache-manifest.1c2c717e8eaf916319ec2bfed557d8f5.js",
     "service-worker.js": "/shopinglist-frontend/service-worker.js",
-    "static/css/main.0b8d0de3.chunk.css.map": "/shopinglist-frontend/static/css/main.0b8d0de3.chunk.css.map",
-    "static/js/2.3ef55dd1.chunk.js.LICENSE.txt": "/shopinglist-frontend/static/js/2.3ef55dd1.chunk.js.LICENSE.txt",
+    "static/css/main.a82c94c3.chunk.css.map": "/shopinglist-frontend/static/css/main.a82c94c3.chunk.css.map",
+    "static/js/2.e54aca96.chunk.js.LICENSE.txt": "/shopinglist-frontend/static/js/2.e54aca96.chunk.js.LICENSE.txt",
+    "static/js/main.8a60a8ea.chunk.js.LICENSE.txt": "/shopinglist-frontend/static/js/main.8a60a8ea.chunk.js.LICENSE.txt",
     "static/media/fontello.css": "/shopinglist-frontend/static/media/fontello.dfdd9978.ttf"
   },
   "entrypoints": [
-    "static/js/runtime-main.43e35650.js",
-    "static/js/2.3ef55dd1.chunk.js",
-    "static/css/main.0b8d0de3.chunk.css",
-    "static/js/main.4932c8d3.chunk.js"
+    "static/js/runtime-main.77003779.js",
+    "static/js/2.e54aca96.chunk.js",
+    "static/css/main.a82c94c3.chunk.css",
+    "static/js/main.8a60a8ea.chunk.js"
   ]
 }
